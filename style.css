@@ -1,0 +1,12 @@
+
+body
+{
+    /*background-color: plum;*/
+
+    border: 2px solid black;
+   
+    background-image: url('https://i.pinimg.com/originals/a8/11/a2/a811a271be7d26f6b72e3ce520c158e2.png');
+    background-repeat: no-repeat;
+   background-attachment: fixed;
+  
+}
