@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styling/style1.css">
+    <link rel="stylesheet" href="styling/eventStyle.css">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styling/password.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    #navbarSupportedContent
+    {
+      margin-left: 525px;;
+    }
+    .navmain
+    {
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+      <!-- top part -->
+  <div class="top">
+    <div class="container">
+  <span id="logo">STEPHENS</span><br>
+  <span id="logo1" style="font-size: 20px;">UNIVERSITY</span>
+     <div class="top-nav">
+    <div class="no">
+      <div class="firstno">
+        <div style="font-size:13px;">For more information<br> give a miss call on</div>
+        <div class="mTop4">
+          <b>1800 267 1999</b>
+        </div>
+      </div>
+      <div class="nextno">
+        <div style="font-size:13px;">Admission Helpline</div>
+        <div class="mTop4">
+          <b>9501105714 <br>9501105715</b>
+        </div>
+      </div>
+      <div class="nextno">
+        <div style="font-size:13px;">Delhi &amp; NCR<br> Helpline</div>
+        <div class="mTop4">
+          <b>9599368734</b>
+        </div>
+      </div>
+      <div class="nextno">
+        <div style="font-size:13px;">WB / North East<br> Helpline</div>
+        <div class="mTop4">
+          <b>9810355724</b>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+  </div>
+  </div>
+  <!-- scrolling text -->
+  <div class="container">
+  <marquee  id="text-scroll"behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> »&nbsp;
+  <a>Lorem ipsum dolor sit amet</a><a>consectetur adipisicing elit. </a><a>Unde ullam cum quos optio </a></a>blanditiis debitis amet</a><a> minus consectetur</a><a>odit adipisci rerum ipsa voluptas</a><a> veritatis expedita et </a><a>nihil cumque,</a> <a>exercitationem modi!</marquee></a> </marquee>
+  </div>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light  nav-main sticky-top">
+    <div class="container-fluid">
+      <!-- <div class="navbar-brand">
+        <button class="btn-outline btn1">whatever
+        </button>
+    </div> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse show" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html"  aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="event.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html" >ContactUs</a></li>
+              <li class="nav-item">
+                <button id="login-button" class="btn-light">Login</button>
+              </li>
+  </ul>
+              </div>
+   </div>
+  </nav>
+  <!-- login page -->
+  <div class="container" id="form-div">    
+    <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 ">                    
+    <div class="panel panel-info">
+    <div class="panel-heading">
+    <div class="panel-title">Sign In</div>
+    <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
+    </div>     
+    
+    <div style="padding-top:30px" class="panel-body" >
+    
+    <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+    <form id="loginform" class="form-horizontal" role="form">
+                                        
+    <div style="margin-bottom: 25px" class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i>
+    </span>
+    <input id="login-username" type="text" class="form-control" 
+    name="username" value="" placeholder="username or email" required>                                        
+    </div>
+                                    
+    <div style="margin-bottom: 25px" class="input-group">
+    <span class="input-group-addon">
+      <i class="glyphicon glyphicon-lock"></i>
+    </span>
+    <input id="login-password" type="password" class="form-control" name="password" placeholder="password" required>
+    </div>
+    <div class="input-group">
+    <div class="checkbox">
+    <label>
+    <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+     </label>
+     </div>
+     </div>
+    
+    
+    <div style="margin-top:10px" class="form-group">
+                                        <!-- Button -->
+    
+    <div class="col-sm-12 controls">
+    <button type="submit" id="btn-login" href="#" class="btn btn-success">Login  </button>
+    <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>
+    </div>
+    </div>
+    
+    
+    <div class="form-group">
+    <div class="col-md-12 control">
+    <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                                Don't have an account! 
+    <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+        Sign Up Here</a>
+     </div>
+     </div>
+    </div>
+     </form>     
+    </div>                     
+     </div>  
+    </div>
+    
+    
+    <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <div class="panel panel-info">
+     <div class="panel-heading">
+    <div class="panel-title">Sign Up</div>
+    <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
+     </div>  
+    <div class="panel-body" >
+    <form id="signupform" class="form-horizontal" role="form">
+                                    
+    <div id="signupalert" style="display:none" class="alert alert-danger">
+                          <p>Error:</p>
+           <span></span>
+    </div>
+                    
+                                    
+                                      
+     <div class="form-group">
+     <label for="email" class="col-md-3 control-label">Email</label>
+      <div class="col-md-9">
+     <input type="text" class="form-control" name="email" placeholder="Email Address" required>
+    </div>
+    </div>
+    <div class="form-group">
+    <label for="firstname" class="col-md-3 control-label">First Name</label>
+    <div class="col-md-9">
+    <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
+    </div>
+    </div>
+    <div class="form-group">
+    <label for="lastname" class="col-md-3 control-label">Last Name</label>
+    <div class="col-md-9">
+    <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
+    </div>
+    </div>
+    <div class="form-group">
+    <label for="password" class="col-md-3 control-label">Password</label>
+    <div class="col-md-9">
+    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    </div>
+    </div>
+                                        
+    <div id="message">
+        <h4 id="h4">Password must contain the following:</h4>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      </div>
+    
+    <div class="form-group">
+    <div class="col-md-offset-3 col-md-9">
+    <button id="btn-signup" type="submit" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+    <span style="margin-left:8px;">or</span>  
+     </div>
+     </div>
+                                    
+    <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
+    <div class="col-md-offset-3 col-md-9">
+    <button id="btn-fbsignup" type="button" class="btn btn-primary"><i class="icon-facebook"></i>   Sign Up with Facebook</button>
+     </div>                                           
+                                            
+    </div>                                
+    </form>
+    </div>
+    </div>
+    
+                   
+                   
+                    
+    </div> 
+        </div>
+  <!-- events -->
+  <div class="featured-rooms-center" style="margin-top: 1rem;">
+    <article class="room">
+      <div class="img-container">
+    <img src="https://yehaindia.com/wp-content/uploads/2020/03/Bhangra-2.jpg" alt="single room">
+   <a class="btn room-link" href="#" style="color: black;">Browse Content</a>
+  </div>
+  <p class="room-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ex, laborum possimus aperiam maxime distinctio corporis odio nulla repellendus dolorem. Ex maxime ab praesentium aliquam perspiciatis sunt natus dolorum eius debitis magni. Lorem ipsum dolor sit amet.</p>
+</article>
+<article class="room">
+  <div class="img-container">
+<img src="https://yehaindia.com/wp-content/uploads/2020/03/Bhangra-2.jpg" alt="single room">
+<a class="btn room-link" href="#" style="color: black;">Browse Content</a>
+</div>
+<p class="room-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ex, laborum possimus aperiam maxime distinctio corporis odio nulla repellendus dolorem. Ex maxime ab praesentium aliquam perspiciatis sunt natus dolorum eius debitis magni. Lorem ipsum dolor sit amet.</p>
+</article>
+<article class="room">
+  <div class="img-container">
+<img src="https://yehaindia.com/wp-content/uploads/2020/03/Bhangra-2.jpg" alt="single room">
+<a class="btn room-link" href="#" style="color: black;">Browse Content</a>
+</div>
+<p class="room-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ex, laborum possimus aperiam maxime distinctio corporis odio nulla repellendus dolorem. Ex maxime ab praesentium aliquam perspiciatis sunt natus dolorum eius debitis magni. Lorem ipsum dolor sit amet.</p>
+</article>
+<article class="room">
+  <div class="img-container">
+<img src="https://yehaindia.com/wp-content/uploads/2020/03/Bhangra-2.jpg" alt="single room">
+<a class="btn room-link" href="#" style="color: black;">Browse Content</a>
+</div>
+<p class="room-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ex, laborum possimus aperiam maxime distinctio corporis odio nulla repellendus dolorem. Ex maxime ab praesentium aliquam perspiciatis sunt natus dolorum eius debitis magni. Lorem ipsum dolor sit amet.</p>
+</article>
+<article class="room">
+  <div class="img-container">
+<img src="https://yehaindia.com/wp-content/uploads/2020/03/Bhangra-2.jpg" alt="single room">
+<a class="btn room-link" href="#" style="color: black;">Browse Content</a>
+</div>
+<p class="room-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ex, laborum possimus aperiam maxime distinctio corporis odio nulla repellendus dolorem. Ex maxime ab praesentium aliquam perspiciatis sunt natus dolorum eius debitis magni. Lorem ipsum dolor sit amet.</p>
+</article>
+<article class="room">
+  <div class="img-container">
+<img src="https://yehaindia.com/wp-content/uploads/2020/03/Bhangra-2.jpg" alt="single room">
+<a class="btn room-link" href="#" style="color: black;">Browse Content</a>
+</div>
+<p class="room-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ex, laborum possimus aperiam maxime distinctio corporis odio nulla repellendus dolorem. Ex maxime ab praesentium aliquam perspiciatis sunt natus dolorum eius debitis magni. Lorem ipsum dolor sit amet.</p>
+</article>
+    </div>
+    <div class="flex-container">
+  
+      <div class="item-left"><h2 class="name">STEPHENS<br>UNIVERSITY</h>
+      </div>
+      <div class="item-right">
+        <ul id="footer-links">
+        <li id="footer-links-li" class="">
+        Lorem ipsum dolor sit amet<br>
+        Lorem ipsum dolor sit amet<br>
+        Lorem ipsum dolor sit amet<br>
+        Lorem ipsum dolor sit amet<br>
+        </li>
+        <li id="footer-links-li" class="">
+          Lorem ipsum dolor sit amet<br>
+          Lorem ipsum dolor sit amet<br>
+          Lorem ipsum dolor sit amet<br>
+          Lorem ipsum dolor sit amet<br>
+          </li>
+          <li id="footer-links-li" class="">
+            Contact us<br>
+           1234567890<br>
+            1234567890<br>
+            1472583690<br>
+            </li>
+      
+     
+      </ul>
+      </div>
+      </div>
+      <script>
+        var myInput = document.getElementById("psw");
+        var letter = document.getElementById("letter");
+        var capital = document.getElementById("capital");
+        var number = document.getElementById("number");
+        var length = document.getElementById("length");
+        
+        // When the user clicks on the password field, show the message box
+        myInput.onfocus = function() {
+          document.getElementById("message").style.display = "block";
+        }
+        
+        // When the user clicks outside of the password field, hide the message box
+        myInput.onblur = function() {
+          document.getElementById("message").style.display = "none";
+        }
+        
+        // When the user starts to type something inside the password field
+        myInput.onkeyup = function() {
+          // Validate lowercase letters
+          var lowerCaseLetters = /[a-z]/g;
+          if(myInput.value.match(lowerCaseLetters)) {  
+            letter.classList.remove("invalid");
+            letter.classList.add("valid");
+          } else {
+            letter.classList.remove("valid");
+            letter.classList.add("invalid");
+          }
+          
+          // Validate capital letters
+          var upperCaseLetters = /[A-Z]/g;
+          if(myInput.value.match(upperCaseLetters)) {  
+            capital.classList.remove("invalid");
+            capital.classList.add("valid");
+          } else {
+            capital.classList.remove("valid");
+            capital.classList.add("invalid");
+          }
+        
+          // Validate numbers
+          var numbers = /[0-9]/g;
+          if(myInput.value.match(numbers)) {  
+            number.classList.remove("invalid");
+            number.classList.add("valid");
+          } else {
+            number.classList.remove("valid");
+            number.classList.add("invalid");
+          }
+          
+          // Validate length
+          if(myInput.value.length >= 8) {
+            length.classList.remove("invalid");
+            length.classList.add("valid");
+          } else {
+            length.classList.remove("valid");
+            length.classList.add("invalid");
+          }
+        }
+        </script>
+         <script>
+          $(document).ready(function(){
+          
+            $("#login-button").click(function(){
+              $("#form-div").slideToggle(50);
+            });
+            
+            
+          });
+          </script>
+</body>
+</html>
